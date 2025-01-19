@@ -6,7 +6,7 @@ import {
 import { IProject } from '../../types/types.ts';
 
 
-let index = 1;
+let projects = 1;
 export const $projects = createStore<IProject[]>([]);
 
 export const update = createEvent<IProject>();
@@ -22,7 +22,7 @@ const updateStore = (state: IProject[], data: IProject) => {
         } else {
             state.push({
                 ...data,
-                id: index++,
+                id: projects++,
             });
         }
     }

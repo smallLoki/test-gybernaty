@@ -1,5 +1,5 @@
 import React from "react";
-import { update } from "../../../models/Projects";
+import { update } from "../../../app/stores/projects.ts";
 import { IProject } from "../../../types/types.ts";
 import { Actionblock, ActionBtn } from "./styled.ts";
 

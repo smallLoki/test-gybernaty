@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useUnit } from "effector-react";
-import { $projects } from "../../models/Projects";
-import DropdownMenu from "../../shared/components/menu/menu.tsx";
+import { $projects } from "../../app/stores/projects.ts";
+import DropdownMenu from "../../shared/ui/menu/menu.tsx";
 import {
     Breadcrumbs,
     Section,
@@ -13,9 +13,9 @@ import {
     Title,
     FiltersBlock,
     Button, Table, Status, CheckBox, DropdownList, Tag, NoProjects, CenterText
-} from "../../styled.ts";
-import ReactArrowDown from "../../assets/icons/arrow_down.svg";
-import ReactClose from "../../assets/icons/close.svg";
+} from "../../app/styled/styled.ts";
+import ReactArrowDown from "../../shared/assets/icons/arrow_down.svg";
+import ReactClose from "../../shared/assets/icons/close.svg";
 
 
 function Projects() {

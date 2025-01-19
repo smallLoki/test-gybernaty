@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { update } from "../../models/Projects";
+import { update } from "../../app/stores/projects.ts";
 
 export const useCreateHooks = () => {
     const navigate = useNavigate();

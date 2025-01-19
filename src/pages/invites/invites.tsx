@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useUnit } from "effector-react";
-import { $projects } from "../../models/Projects";
-import ActionBlock from "../../shared/components/action-block/action-block.tsx";
+import { $projects } from "../../app/stores/projects.ts";
+import ActionBlock from "../../shared/ui/action-block/action-block.tsx";
 import {
     Breadcrumbs,
     Section,
@@ -12,9 +12,9 @@ import {
     Title,
     FiltersBlock,
     Button, Table, CheckBox, DropdownList, Tag, NoProjects, CenterText
-} from "../../styled.ts";
-import ReactArrowDown from "../../assets/icons/arrow_down.svg";
-import ReactClose from "../../assets/icons/close.svg";
+} from "../../app/styled/styled.ts";
+import ReactArrowDown from "../../shared/assets/icons/arrow_down.svg";
+import ReactClose from "../../shared/assets/icons/close.svg";
 
 
 function Invites() {
